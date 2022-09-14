@@ -4,4 +4,4 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN service apache2 restart
 COPY /mnt/velocity-app/index.html /var/www/html/
 EXPOSE 80
-ENTRYPOINT ["/usr/sbin/apachectl/","-DFORGROUND"]
+ENTRYPOINT ["/usr/sbin/apachectl/","-DFOREGROUND"]
